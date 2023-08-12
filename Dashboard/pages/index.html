@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap" />
+    <link flex href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="../styles/style.css" />
+  </head>
+  <body>
+    <!-- Sidebar -->
+    <nav class="sidebar">
+        <!-- Brand -->
+        <div class="brand flex">
+            <span class="brand_img">
+            <img src="../src/logo.jpg" alt="logo_img" />
+            </span>
+            <span class="brand_name">Company</span>
+        </div>
+        <!-- Menu -->
+        <div class="menu line">
+            <div class="menu_item">
+            <ul class="list_item">
+                <li class="item">
+                <a href="#beranda" class="link flex">
+                    <i class="bx bxs-home"></i>
+                    <span>Beranda</span>
+                </a>
+                </li>
+                <li class="item">
+                <a href="#pengguna" class="link flex">
+                    <i class="bx bxs-group"></i>
+                    <span>Pengguna</span>
+                </a>
+                </li>
+                <li class="item">
+                <a href="#info" class="link flex">
+                    <i class="bx bx-message"></i>
+                    <span>Info</span>
+                </a>
+                </li>
+                <li class="item">
+                <a href="#laporan" class="link flex">
+                    <i class="bx bx-notepad"></i>
+                    <span>Laporan</span>
+                </a>
+                </li>
+            </ul>
+            <ul class="list_item line">
+                <li class="item">
+                <a href="#keluar" class="link flex">
+                    <i class="bx bx-log-out"></i>
+                    <span>Keluar</span>
+                </a>
+                </li>
+            </ul>
+            </div>
+            <!-- Nama Pengguna -->
+            <div class="line flex">
+                <div class="data_text">
+                    <span class="name">Axa Rajandrya</span>
+                </div>
+            </div>
+        </div>
+    </nav>
+    
+    <!-- Main -->
+    <main class="main">
+        <article class="data"> 
+            <!-- Search Box -->
+            <div class="box flex">
+                <div class="check-box">
+                    <select>
+                        <option>HM</option>
+                        <option>HGB</option>
+                    </select>
+                </div>
+                <div class="search-box">
+                    <i class="bx bx-search"></i>
+                    <input type="text" placeholder="Cari disini..." />
+                    <button class="button">Cari</button>
+                </div>
+            </div>
+
+            <!-- Table -->
+            <div class="table">
+                <div class="btn-group">
+                    <a href="tambah" class="button">Tambah Berkas</a>
+                </div>
+                <table class="table-data">
+                    <thead>
+                        <tr>
+                            <th>NO</th>
+                            <th>BERKAS</th>
+                            <th>NAMA</th>
+                            <th>DESA/KELUARAN</th>
+                            <th>KEGIATAN</th>
+                            <th>PELAKSANA</th>
+                            <th>HAK</th>
+                            <th class="th-button"><i class="bx bx-cog"></i></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>100000/2023</td>
+                            <td>PUTRA PRATAMA</td>
+                            <td>LAMBANG SARI TAMA</td>
+                            <td>PENDAFTARAN TANAH PERTAMA KALI</td>
+                            <td>SURYONO</td>
+                            <td>HM.03012</td>
+                            <td class="flex">
+                                <a href="kirim" class="button" style="margin-right: 5px;">Kirim</a>
+                                <a href="catatan" class="button-catatan">Catatan</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>200000/2023</td>
+                            <td>SANDI UNO</td>
+                            <td>AGRO UTAMA</td>
+                            <td>PENJUALAN TANAH</td>
+                            <td>HM.03612</td>
+                            <td>SURYONO</td>
+                            <td class="flex">
+                                <a href="kirim" class="button" style="margin-right: 5px;">Kirim</a>
+                                <a href="catatan" class="button" style="background-color: yellow; color: black;">Catatan</a>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </article>
+    </main>
+  </body>
+</html>

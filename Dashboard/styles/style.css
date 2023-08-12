@@ -1,0 +1,289 @@
+/* Pre */
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Poppins", sans-serif;
+    }
+
+    body {
+        min-height: 100vh;
+        background-image: linear-gradient(to bottom right, #000000, #243B55);
+    }
+
+    .flex {
+        display: flex;
+        align-items: center;
+    }
+
+/* Sidebar */
+    .sidebar {
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 270px;
+        background-image: linear-gradient(to bottom right, #000000, #243B55);
+        padding: 15px 10px;
+        box-shadow: 0 0 2px rgba(0, 0, 0, 0.1);
+        transition: all 0.4s ease;
+    }
+    .brand {
+        gap: 8px;
+    }
+    .brand_img {
+        display: flex;
+        min-width: 55px;
+        justify-content: center;
+    }
+    .brand_img img {
+        height: 35px;
+        width: 35px;
+        border-radius: 50%;
+        object-fit: cover;
+    }
+    .brand_name {
+        font-size: 22px;
+        color: #fff;
+        font-weight: 500px;
+        transition: all 0.3s ease;
+    }
+    .menu {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin-top: 40px;
+        overflow-y: auto;
+        height: calc(100% - 82px);
+    }
+    .menu::-webkit-scrollbar {
+        display: none;
+    }
+    .item {
+        list-style: none;
+    }
+    .link {
+        text-decoration: none;
+        border-radius: 8px;
+        margin-bottom: 8px;
+        color: #fff;
+    }
+    .link:hover {
+        color: #fff;
+        background-color: #302b63;
+    }
+    .link i {
+        height: 50px;
+        min-width: 55px;
+        display: flex;
+        font-size: 22px;
+        align-items: center;
+        justify-content: center;
+        border-radius: 4px;
+    }
+    .line {
+        padding-top: 15px;
+        margin-top: 15px;
+        gap: 15px;
+        border-top: 2px solid rgba(255, 255, 255, 0.5);
+    }
+    .name {
+        font-size: 18px;
+        color: #fff;
+    }
+
+/* Main */
+    .main {
+        margin-left: 300px;
+        margin-top: 50px;
+    }
+
+/* Check Box */
+    .check-box {
+        position: relative;
+        height: 50px;
+        max-width: 25%;
+        width: 100%;
+        background: #fff;   
+        border-radius: 8px;
+        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    }
+    .inputberkas {
+        height: 100%;
+        width: 75%;
+        outline: none;
+        font-size: 18px;
+        font-weight: 400;
+        border: none;
+        padding: 20px;
+        background-color: transparent;
+    }
+    .checkbox {
+       width: 25px;
+       height: 25px;
+       margin-left: 20px;
+       vertical-align: middle;
+    }
+    .check-box select {
+        padding: 10px; 
+        margin: 5px;
+        border: solid 1px #fff; 
+        outline: 0; 
+        width: 500px; 
+        background: #FFFFFF; 
+        width: 95%;
+    }
+
+/* Seach Box */
+    .search-box {
+        position: relative;
+        height: 50px;
+        max-width: 75%;
+        width: 100%;
+        background: #fff;
+        margin: 0 20px;
+        border-radius: 8px;
+        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    }
+    .search-box i,
+    .search-box .button {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+    .search-box i {
+        left: 20px;
+        font-size: 30px;
+        color: #707070;
+    }
+    .search-box input {
+        height: 100%;
+        width: 100%;
+        outline: none;
+        font-size: 18px;
+        font-weight: 400;
+        border: none;
+        padding: 0 155px 0 65px;
+        background-color: transparent;
+    }
+    .search-box .button {
+        right: 20px;
+        font-size: 16px;
+        color: #fff;
+        border: none;
+        padding: 8px 25px;
+        border-radius: 6px;
+        background-color: #302b63;
+        cursor: pointer;
+    }
+    .search-box .button:active {
+        transform: translateY(-50%) scale(0.98);
+    }
+
+/* Table */
+    .table {
+        margin-top: 30px;
+        margin-right: 20px;
+        padding: 5px;
+    }
+    .table-data {
+        overflow-x: auto;
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+        border: 1px solid #000;
+    }
+    .table thead {
+        background-color: #302b63;
+        color: #fff;
+    }
+    .table th, td, th.th-button {
+        padding: 10px;
+        text-align: center;
+    }
+    .table th.th-button {
+        width: 5%;
+    }
+    .table a {
+        text-decoration: none;
+    }
+    .button, .button-catatan {
+        right: 20px;
+        font-size: 16px;
+        color: #fff;
+        border: none;
+        padding: 5px 15px;
+        border-radius: 6px;
+        background-color: #302b63;
+        cursor: pointer;
+    }
+    .button:hover {
+        background-color: #1a1643;
+    }
+
+    .button-catatan {
+        background-color: #ffff00;
+        color: black;
+    }
+    .button-catatan:hover {
+        background-color: #9acd32;
+    }
+
+    .table-data tbody {
+        background-color: #fff;
+    }
+    .table-data tr:nth-child(even) {
+        background-color: #e1e1e1;
+    }
+    .btn-group {
+        margin-bottom: 10px;
+        float: right;
+    }
+
+/* Form */
+    .form {  
+        margin-top: 30px;
+        margin-right: 20px;
+    }
+      
+    .form label { 
+        margin-left: 10px; 
+        color: #fff; 
+        width: 15%;
+        text-align: right;
+    } 
+    .form input { 
+        padding: 10px; 
+        margin: 5px;
+        border: solid 1px #E5E5E5; 
+        outline: 0; 
+        width: 500px; 
+        background: #FFFFFF; 
+        width: 75%;
+        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    } 
+    input:hover, 
+    input:focus { 
+        border-color: #C9C9C9; 
+    } 
+    .submit input { 
+        width: auto; 
+        padding: 9px 15px; 
+        background: #617798; 
+        border: 0; 
+        font-size: 14px; 
+        color: #FFFFFF; 
+    }
+    .form .btn-group {
+        margin-top: 10px;
+    }
+    .form select {
+        padding: 10px; 
+        margin: 5px;
+        border: solid 1px #E5E5E5; 
+        outline: 0; 
+        width: 500px; 
+        background: #FFFFFF; 
+        width: 75%;
+        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    }

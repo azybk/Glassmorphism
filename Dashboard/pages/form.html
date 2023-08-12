@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap" />
+    <link flex href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="../styles/style.css" />
+  </head>
+  <body>
+    <!-- Sidebar -->
+    <nav class="sidebar">
+        <!-- Brand -->
+        <div class="brand flex">
+            <span class="brand_img">
+            <img src="../src/logo.jpg" alt="logo_img" />
+            </span>
+            <span class="brand_name">Company</span>
+        </div>
+        <!-- Menu -->
+        <div class="menu line">
+            <div class="menu_item">
+            <ul class="list_item">
+                <li class="item">
+                <a href="#beranda" class="link flex">
+                    <i class="bx bxs-home"></i>
+                    <span>Beranda</span>
+                </a>
+                </li>
+                <li class="item">
+                <a href="#pengguna" class="link flex">
+                    <i class="bx bxs-group"></i>
+                    <span>Pengguna</span>
+                </a>
+                </li>
+                <li class="item">
+                <a href="#info" class="link flex">
+                    <i class="bx bx-message"></i>
+                    <span>Info</span>
+                </a>
+                </li>
+                <li class="item">
+                <a href="#laporan" class="link flex">
+                    <i class="bx bx-notepad"></i>
+                    <span>Laporan</span>
+                </a>
+                </li>
+            </ul>
+            <ul class="list_item line">
+                <li class="item">
+                <a href="#keluar" class="link flex">
+                    <i class="bx bx-log-out"></i>
+                    <span>Keluar</span>
+                </a>
+                </li>
+            </ul>
+            </div>
+            <!-- Nama Pengguna -->
+            <div class="line flex">
+                <div class="data_text">
+                    <span class="name">Axa Rajandrya</span>
+                </div>
+            </div>
+        </div>
+    </nav>
+    
+    <!-- Main -->
+    <main class="main">
+        <article class="data"> 
+            <!-- Form -->
+            <form class="form"> 
+                <div class="flex"> 
+                    <label>No Berkas</label> 
+                    <input type="text" /> 
+                </div>
+                <div class="flex"> 
+                    <label>Nama</label> 
+                    <input type="text" /> 
+                </div>
+                <div class="flex"> 
+                    <label>Jenis Pelayanan</label>
+                    <select>
+                        <option>Pemisahan</option>
+                        <option>Penggabungan</option>
+                        <option>Pemecahan</option>
+                    </select>
+                </div> 
+                <div class="flex"> 
+                    <label>Desa/Keluarahan</label>
+                    <input type="text" />  
+                </div> 
+                <div class="flex"> 
+                    <label>Tipe Hak</label>
+                    <select>
+                        <option>HM</option>
+                        <option>HGB</option>
+                    </select>
+                </div> 
+                <div class="flex"> 
+                    <label>No Hak</label>
+                    <input type="text" />  
+                </div> 
+                <div class="btn-group">
+                    <button href="simpan" class="button">Simpan</button>
+                    <button href="tambah" class="button">Tambah Berkas</button>
+                    <button href="Kirim" class="button">Kirim</button>
+                </div>
+            </form>
+            <!-- Table -->
+            <div class="table">
+                <table class="table-data">
+                    <thead>
+                        <tr>
+                            <th>NO</th>
+                            <th>DESA/KELUARAN</th>
+                            <th>TIPE HAK</th>
+                            <th>NOMOR</th>
+                            <th class="th-button"><i class="bx bx-cog"></i></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>LAMBANG SARI TAMA</td>
+                            <td>HM</td>
+                            <td>01003</td>
+                            <td>
+                                <a href="hapus" class="button">Hapus</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>SANDI UNO</td>
+                            <td>HM</td>
+                            <td>02004</td>
+                            <td>
+                                <a href="hapus" class="button">Hapus</a>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </article>
+    </main>
+  </body>
+</html>
